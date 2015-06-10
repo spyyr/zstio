@@ -7,7 +7,7 @@
 		{% get_current_language as LANGUAGE_CODE %}
 		<html lang="{{ LANGUAGE_CODE }}">
 		<meta charset="UTF-8">
-		<link type="text/css" src="{% static "style/css/style.css" %}">
+		<link rel="stylesheet" type="text/css" href="{% static "style/css/style.css" %}">
 		<title>{% block subpage_title %}{% endblock %}</title>
 	</head>
 	<body>
