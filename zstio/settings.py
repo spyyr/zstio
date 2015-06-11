@@ -88,6 +88,7 @@ DATABASES = {
         'PORT':     '',
     }
 }
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
@@ -118,4 +119,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_DIR = (
     os.path.join(BASE_DIR, 'website/static/'),
+    os.path.join(BASE_DIR, 'EduPanel/static/'),
 )
