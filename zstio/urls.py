@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = patterns('',
     url(r'^$', 'website.views.index', name="index"),
-    url(r'^edupanel/$', 'EduPanel.views.login', name="ep-login"),
+    url(r'^edupanel/$', 'EduPanel.views.login', name="ep_login"),
 
 )
 urlpatterns += patterns('django.views.static',
