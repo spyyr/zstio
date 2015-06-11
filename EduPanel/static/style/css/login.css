@@ -8,7 +8,7 @@ body {
   color: #555; }
 
 .login-wrapper {
-  width: 400px;
+  width: 350px;
   height: 200px;
   margin: auto;
   margin-top: 200px;
@@ -23,9 +23,13 @@ body {
     padding-top: 10px;
     margin-left: 20px; }
 
+.login {
+  width: 300px;
+  margin: auto;
+  margin-top: 30px; }
+
 .login-input-wrapper {
   margin: auto;
-  margin-top: 40px;
   width: 250px; }
   .login-input-wrapper .icon-wrapper {
     width: 40px;
@@ -66,12 +70,42 @@ body {
     padding-left: 10px;
     padding-right: 10px; }
 
+.separator {
+  clear: both;
+  padding-top: 1.5px;
+  padding-bottom: 1.5px; }
+
+.forgot-psswd {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center; }
+  .forgot-psswd a {
+    color: #878787;
+    text-decoration: none; }
+
+.sign-in-wrapper {
+  width: 100px;
+  margin: auto;
+  margin-top: 20px; }
+  .sign-in-wrapper p {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer; }
+  .sign-in-wrapper hr {
+    width: 0px;
+    height: 3px;
+    background-color: #1ea3eb;
+    border: 0;
+    margin: auto;
+    margin-top: 2px; }
+
 .login-wrapper-shadow {
   margin: auto;
   position: relative;
   margin-top: -25px;
   z-index: -1;
-  width: 400px;
+  width: 350px;
   height: 16px;
   background: #fff;
   -webkit-border-radius: 36.25;
