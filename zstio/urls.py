@@ -15,14 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import include, url, patterns
 from django.contrib import admin
-from website import views
 from django.conf import settings
 from django.conf.urls.static import static
 
-urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', views.index, name="index")
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns = patterns('',
+    url(r'^$', 'website.views.index', name="index"),
+    url(r'^edupanel/$', 'EduPanel.views.login', name="ep-login"),
+
+)
 urlpatterns += patterns('django.views.static',
-    (r'media/(?P<path>.*)', 'serve', {'document_root': settings.MEDIA_ROOT}),
+    (r'^media/(?P<path>.*)', 'serve', {'document_root': settings.MEDIA_ROOT}),
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
 )
